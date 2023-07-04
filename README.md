@@ -15,3 +15,16 @@ Once you got your pointers, you can do whatever you want with.
   
 This shellcode contains nullbytes, but can be easely be removed.
 
+## Build
+
+```bash
+  $ nasm -f win64 shellcode.asm
+```
+Extract the shellcode of shellcode.obj  
+Put it in your buffer.  
+
+To compile shellcode.c or main.c to test:
+```bash
+  $ x86_64-w64-mingw32-gcc shellcode.c -o shellcode.exe
+  $ x86_64-w64-mingw32-gcc main.c -o test.exe
+```
