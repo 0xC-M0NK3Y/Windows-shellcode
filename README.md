@@ -4,6 +4,7 @@ Example of shellcoding on Windows
 You can see in main.c the equivalent C code of shellcode.asm.  
 The shellcode is in shellcode.asm.  
 In shellcode.c you have an example of using this shellcode.  
+This is only for 64 bits, but its done the same way in 32 bits.
 
 ## Explanation
 
